@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;700;800&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive card details div class="just"</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="left">
+      <img src="images/bg-main-desktop.png" alt="" class="bg_image">
+      <img src="images/bg-main-mobile.png" alt="" class="bg_imagem">
+      <div class="card_details">
+        <img class="card_logo" width="80px" src="images/card-logo.svg" alt="">
+        <div class="card_info">
+          <h2 id="show_number">0000 0000 0000 0000</h2>
+          <div class="p_info">
+            <p id="show_name">JANE APPLESEED</p>
+            <p><span id="show_month">00</span>/<span id="show_year">00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="back_details">
+        <span id="show_cvc">000</span>
+      </div>
+
+      <img src="images/bg-card-front.png" alt=""  class="front_card">
+      <img src="images/bg-card-back.png" alt="" class="back_card">
+    </div>
+
+    <div class="right">
+      <div class="just" action="">
+
+        <div class="name">
+          <label for="">CARDHOLDER NAME</label>
+          <input id="holder_name" type="text" placeholder="e.g. Jane Appleseed" required>
+        </div>
+        
+
+        <div class="number_c">
+          <label for="">CARD NUMBER</label>
+          <input id="card_number" type="number" placeholder="e.g. 1234 5678 0000" required>
+        </div>
+        
+        <div class="date_cvc">
+
+          <div class="date">
+            <label for="">EXP.DATE (MM/YY)</label>
+            <div class="inputs">
+              <input type="number" placeholder="MM" id="month" min="1" max="12" required>
+            <input type="number" placeholder="YY" id="year" min="2004" max="2050" required>
+            </div>
+          </div>
+
+          <div class="cvc">
+            <label for="">CVC</label>
+            <input id="cvc" type="number" placeholder="e.g. 123" required>
+          </div>
+                                
+        </div>
+        
+        <button onclick="showInfo()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

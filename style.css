@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    flex-basis: 40%;
+    width: 100%;
+    height: 100vh;
+}
+
+.left img.bg_image{
+    width: 100%;
+    height: 100vh;
+}
+
+.left img.bg_imagem{
+    width: 100%;
+    display: none;
+}
+
+.left .front_card{
+    position: absolute;
+    width: 30%;
+    height: 35%;
+    z-index: 1;
+    top: 15%;
+    left: 16%;
+}
+
+.card_details{
+    width: 30%;
+    height: 35%;
+    position: absolute;
+    padding: 30px;
+    top:15%;
+    left: 16%;
+    z-index: 3;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_details .card_info{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p_info p{
+    font-size: 1rem;
+}
+
+.left .back_card{
+    position: absolute;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    z-index: 1;
+    height: 35%;
+    top: 55%;
+    left: 22%;
+}
+
+.back_details{
+    position: absolute;
+    top: 71%;
+    font-size: 1rem;
+    left: 46.5%;
+    color: #fff;
+    z-index: 2;
+}
+
+.right{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.just{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.just label{
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(226, 225, 225);
+    border-radius: 5px;
+}
+
+.date_cvc{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date_cvc .date{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.date_cvc .date .inputs{
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+    display: flex;
+}
+
+.date_cvc .date .inputs input{
+    width: 47%;
+}
+
+.date_cvc .cvc{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.date_cvc .cvc input{
+    width: 100%;
+}
+
+.just button{
+    height: 40px;
+    background-color: hsla(278, 68%, 11%, 1);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:985px){
+    .left .front_card{
+        width: 35%;
+    }
+
+    .card_details{
+        width: 35%;
+    }
+
+    .back_details{
+        width: 35%;
+    }
+
+    .left .back_card{
+        width: 35%;
+    }
+
+    .just{
+        width: 50%;
+        margin-left: 200px;
+    }
+
+}
+
+@media only screen and (max-width:821px){
+    .left .front_card{
+        width: 38%;
+    }
+
+    .left .back_card{
+        width: 38%;
+    }
+
+    .just{
+        width: 60%;
+        margin-left: 200px;
+    }
+
+    .card_details{
+        width: 38%;
+        font-size: 14px;
+    }
+
+    .back_details{
+        width: 38%;
+    }
+
+}
+
+@media only screen and (max-width:633px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .just{
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .left img.bg_image{
+        display: none;
+    }
+
+    .left img.bg_imagem{
+        display: block;
+    }
+
+    .left .front_card{
+        width: 80%;
+        height: 25%;
+        top: 16%;
+        left: 5%;
+        z-index: 3;
+    }
+
+    .card_details{
+        width: 80%;
+        height: 25%;
+        top: 18%;
+        left: 5%;
+        z-index: 4;
+    }
+
+    .card_logo{
+        width: 60px;
+    }
+
+    .left .back_card{
+        width: 76%;
+        height: 25%;
+        top: 1%;
+        z-index: 1;
+    }
+
+    .back_details{
+        width: 76%;
+        height: 18%;
+        top: 12%;
+        left: 80%;
+        z-index: 4;
+    }
+
+}
+
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
